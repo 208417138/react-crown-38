@@ -1,3 +1,4 @@
+import './Homepage_38.scss';
 import Directory_38 from "../components/Directory_38";
 function Homepage_38() {
     return (
