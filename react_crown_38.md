@@ -1,10 +1,12 @@
 ## 1
-- chrome截圖
-![](https://i.imgur.com/YfS4YVr.jpg)
-- 目錄結構及App_xx部分內容截圖  (以學號後2碼來展開category內容，其他收起)
-![](https://i.imgur.com/ThNGSEO.png)
+
+- chrome 截圖
+  ![](https://i.imgur.com/YfS4YVr.jpg)
+- 目錄結構及 App_xx 部分內容截圖 (以學號後 2 碼來展開 category 內容，其他收起)
+  ![](https://i.imgur.com/ThNGSEO.png)
 
 - App_xx.js code (程式碼，非圖片 )
+
 ```
 import './App_38.scss';
 
@@ -55,13 +57,16 @@ function App_38() {
 }
 
 export default App_38;
-``` 
+```
+
 ## 2
+
 - Chrome 截圖
-![](https://i.imgur.com/ziHfFno.jpg)
-- 目錄結構，要含所有用到的components 
-![](https://i.imgur.com/3HHPqu2.png)
+  ![](https://i.imgur.com/ziHfFno.jpg)
+- 目錄結構，要含所有用到的 components
+  ![](https://i.imgur.com/3HHPqu2.png)
 - Homepage_xx.js code (程式碼，非圖片 )
+
 ```
 import Directory_38 from "../components/Directory_38";
 function Homepage_38() {
@@ -75,7 +80,9 @@ function Homepage_38() {
 export default Homepage_38
 
 ```
+
 - Directory_xx.js code
+
 ```
 import './Directory_38.scss';
 import MenuItem_38 from './MenuItem_38';
@@ -116,7 +123,9 @@ function Directory_38() {
 export default Directory_38
 
 ```
+
 - MenuItem_xx.js code
+
 ```
 import './MenuItem_38.scss';
 
@@ -137,9 +146,11 @@ export default MenuItem_38;
 ```
 
 ## 3
+
 - Chrome 截圖
-![](https://i.imgur.com/MOoIatN.jpg)
+  ![](https://i.imgur.com/MOoIatN.jpg)
 - JSON 陣列 (程式碼，非圖片 )
+
 ```
 const items = [
     {
@@ -176,7 +187,9 @@ const items = [
 
 export default items;
 ```
+
 - Directory_xx.js code (程式碼，非圖片 )
+
 ```
 import React, { useState } from 'react';
 import './Directory_38.scss';
@@ -206,3 +219,5 @@ function Directory_38() {
 export default Directory_38
 
 ```
+
+## 4
