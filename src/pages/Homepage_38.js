@@ -1,9 +1,9 @@
 import './Homepage_38.scss';
-import Directory_38 from "../components/Directory_38";
+import Directory2_38 from "../components/Directory2_38";
 function Homepage_38() {
     return (
         <div>
-            <Directory_38 />
+            <Directory2_38 />
         </div>
     )
 }

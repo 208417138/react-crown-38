@@ -1,19 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Directory_38.scss';
 import MenuItem_38 from './MenuItem_38';
-import items from './menu-items-data_38';
-function Directory_38() {
-    const [menuItems, setMenuItems] = useState(items);
+import axios from 'axios';
+// import items from './menu-items-data_38';
+function Directory2_38() {
+    const [menuItems, setMenuItems] = useState([]);
+
+    useEffect(() => {
+        const fetchMenuItems = async () => {
+            const HEROKU_URL = 'https://crown1101.herokuapp.com/api_xx/category_xx'
+            const { data } = await axios.get(HEROKU_URL)
+            console.log('./api/category_xx', data)
+            setMenuItems(data)
+        }
+        fetchMenuItems()
+    }, [])
+
     return (
         <div>
             <div className="directory-menu">
                 {menuItems.map(item => {
-                    const { id, name, remoteUrl, size } = item;
+                    const { id, name, remote_url, size } = item;
                     return (
                         <MenuItem_38
                             id={id}
                             name={name}
-                            remoteUrl={remoteUrl}
+                            remoteUrl={remote_url}
                             size={size}
                         />
                     )
@@ -23,4 +35,4 @@ function Directory_38() {
     )
 }
 
-export default Directory_38
+export default Directory2_38
