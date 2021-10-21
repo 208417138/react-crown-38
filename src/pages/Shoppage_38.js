@@ -1,8 +1,9 @@
-import CollectionOverview from '../components/CollectionOverview';
+import CollectionOverview_38 from "../components/CollectionOverview_38";
+import './Shoppage_38.scss'
 function Shoppage_38() {
   return (
     <div>
-      <CollectionOverview />
+      <CollectionOverview_38 />
     </div>
   );
 }
